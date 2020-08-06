@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="41313" started-at="2020-08-06T00:19:22Z" finished-at="2020-08-06T00:20:03Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.runner.ZooplaRunner@7219ec67]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="41313" started-at="2020-08-06T00:19:22Z" finished-at="2020-08-06T00:20:03Z">
+      <class name="com.runner.ZooplaRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.ZooplaRunner@7219ec67]" name="setUpClass" is-config="true" duration-ms="312" started-at="2020-08-06T00:19:22Z" finished-at="2020-08-06T00:19:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.runner.ZooplaRunner@7219ec67]" name="runScenario" duration-ms="40797" started-at="2020-08-06T00:19:22Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-06T00:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["As a Automation practice user , i can login successfully with valid user name and password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Zoopla Automation Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.runner.ZooplaRunner@7219ec67]" name="tearDownClass" is-config="true" duration-ms="101" started-at="2020-08-06T00:20:03Z" finished-at="2020-08-06T00:20:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.runner.ZooplaRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
