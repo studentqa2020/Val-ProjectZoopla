@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42255" started-at="2020-08-06T19:47:52Z" finished-at="2020-08-06T19:48:34Z">
+  <suite name="Default suite" duration-ms="105080" started-at="2020-08-07T20:51:41Z" finished-at="2020-08-07T20:53:26Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.runner.ZooplaRunner@7219ec67]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.runner.ZooplaRunner@419c5f1a]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="42255" started-at="2020-08-06T19:47:52Z" finished-at="2020-08-06T19:48:34Z">
+    <test name="Default test" duration-ms="105080" started-at="2020-08-07T20:51:41Z" finished-at="2020-08-07T20:53:26Z">
       <class name="com.runner.ZooplaRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.ZooplaRunner@7219ec67]" name="setUpClass" is-config="true" duration-ms="237" started-at="2020-08-06T19:47:52Z" finished-at="2020-08-06T19:47:52Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.ZooplaRunner@419c5f1a]" name="setUpClass" is-config="true" duration-ms="537" started-at="2020-08-07T20:51:41Z" finished-at="2020-08-07T20:51:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.runner.ZooplaRunner@7219ec67]" name="runScenario" duration-ms="41731" started-at="2020-08-06T19:47:52Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-06T19:48:34Z">
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.runner.ZooplaRunner@419c5f1a]" name="runScenario" duration-ms="103745" started-at="2020-08-07T20:51:42Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-07T20:53:25Z">
           <params>
             <param index="0">
               <value>
@@ -27,10 +27,52 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=84.0.4147.105)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'IBTL17', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\IBTL17\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60472}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1010cbf11056874d6dbe8a25a061388a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=84.0.4147.105)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'IBTL17', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\IBTL17\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60472}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1010cbf11056874d6dbe8a25a061388a
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy16.click(Unknown Source)
+at com.cucumber.CucumberPropertySelection.singOut(CucumberPropertySelection.java:74)
+at com.step.def.StepDefinitions.signout(StepDefinitions.java:69)
+at ✽.Signout(file:feature%20Files/zoopla.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.runner.ZooplaRunner@7219ec67]" name="tearDownClass" is-config="true" duration-ms="161" started-at="2020-08-06T19:48:34Z" finished-at="2020-08-06T19:48:34Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.runner.ZooplaRunner@419c5f1a]" name="tearDownClass" is-config="true" duration-ms="573" started-at="2020-08-07T20:53:25Z" finished-at="2020-08-07T20:53:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
